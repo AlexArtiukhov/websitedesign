@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GAMEGO home page</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script>
+			function addToCart() {
+				alert("Product/Service was added to cart");
+			}	
+			function showInfo(product) {
+            	let descriptions = {
+                	'product1': 'Gangster City is an action-packed game where you navigate through the underworld, complete missions, and build your criminal empire.',
+                	'product2': 'Roblox is a vast online platform where users can create, share, and play games created by other users in a wide variety of genres.',
+                	'product3': 'The Witcher is a story-driven RPG where you play as Geralt of Rivia, a monster hunter on an epic quest in a richly detailed fantasy world.',
+					'product4': 'Minecraft is a sandbox game that allows players to build and explore infinite worlds made of blocks, crafting and surviving in various modes.',
+                	'product5': 'Counter Strike is a competitive first-person shooter where players join either the terrorist or counter-terrorist team, engaging in tactical missions.',
+                	'product6': 'Apex Legends is a free-to-play battle royale game featuring unique characters with special abilities, set in a dynamic, fast-paced environment.'
+            	};
+            alert(descriptions[product]);
+        }
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<div id="heading">
+					<h1>GAMEGO </h1>
+					<h2>- best games</h2>
+				</div>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<main>
+				<div class="product">
+					<h2>GANGSTER CITY</h2>
+					<img src="images/product1.jpg" alt="Product 1">
+					<div class="price">25$</div>
+					<button onclick="addToCart()">To Cart</button>
+					<button onclick="showInfo('product1')">Info</button>
+				</div>
+				<div class="product">
+					<h2>ROBLOX</h2>
+					<img src="images/product2.png" alt="Product 2">
+					<div class="price">FREE</div>
+					<button onclick="addToCart()">To Cart</button>
+					<button onclick="showInfo('product2')">Info</button>
+				</div>
+				<div class="product">
+					<h2>THE WITCHER</h2>
+					<img src="images/product3.png" alt="Product 3">
+					<div class="price">40$</div>
+					<button onclick="addToCart()">To Cart</button>
+					<button onclick="showInfo('product3')">Info</button>
+				</div>
+				<div class="product">
+					<h2>MINECRAFT</h2>
+					<img src="images/product4.png" alt="Product 4">
+					<div class="price">20$</div>
+					<button onclick="addToCart()">To Cart</button>
+					<button onclick="showInfo('product4')">Info</button>
+				</div>
+				<div class="product">
+					<h2>COUNTER STRIKE</h2>
+					<img src="images/product5.png" alt="Product 5">
+					<div class="price">5$</div>
+					<button onclick="addToCart()">To Cart</button>
+					<button onclick="showInfo('product5')">Info</button>
+				</div>
+				<div class="product">
+					<h2>APEX LEGENDS</h2>
+					<img src="images/product6.png" alt="Product 6">
+					<div class="price">10$</div>
+					<button onclick="addToCart()">To Cart</button>
+					<button onclick="showInfo('product6')">Info</button>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
+	
